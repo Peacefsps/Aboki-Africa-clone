@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aboki - Foreign bank accounts for Africans</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=PT+Sans&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Nunito Sans";
+    }
+    a {
+        text-decoration: none;
+    }
+    header {
+        display: flex;
+        padding: 42px;
+        justify-content: space-between;
+    }
+    .header a {
+        padding: 0 16px;
+    }
+    button {
+        border: none;
+        border-radius: 5px;
+    }
+    .rightnav {
+        padding: 0 16px;
+        margin: 0 16px;
+    }
+    .rightnav button {
+        background-color: rgb(76, 85, 216);
+        color: white;
+        padding: 8px 18px;
+        font-size: 16px;
+    }
+    p {
+        font-size: 18px;
+        color: rgb(23, 43, 77);
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    section h1 {
+        font-size: 50px;
+        margin-top: 85px;
+        color: #172b4d;
+        line-height: 65px;
+        max-width: 530px;
+        letter-spacing: -0.2px;
+        text-align: center;
+    }
+    section h2 {
+        font-size: 24px;
+        color: rgb(23, 43, 77);
+        line-height: 24px;
+    }
+    p:first-of-type {
+        margin-top: 8px;
+        margin-bottom: 18px;
+        max-width: 550px;
+        line-height: 31px;
+    }
+    #secondpara {
+        color: #172b4d;
+        margin-top: 20px;
+        max-width: 623px;
+        text-align: center;
+    }
+    button:first-child {
+        padding: 10px 24px;
+        background-color: rgb(76, 85, 216);
+        color: white;
+        margin-right: 6px;
+    }
+    button:nth-child(2) {
+        color: rgb(76, 85, 216);
+        background-color: white;
+        padding: 10px 24px;
+        margin-left: 6px;
+        border: 1px solid rgb(225, 225, 225);
+    }
+    #firstimg {
+        height: 578px;
+        width: 1024px;
+        object-fit: scale-down;
+    }
+    .seconddiv {
+        display: flex;
+        border-radius: 6px;
+        background-color: rgba(243, 244, 246, 0.4);
+        margin-top: 48px;
+        margin-bottom: 90px;
+        padding: 61px;
+        height: 590px;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .seconddiv img {
+        max-width: 577px;
+        height: 471px;
+    }
+    .seconddiv button {
+        background-color: white;
+        color:rgb(76, 85, 216);
+        border: 1px solid rgb(225, 225, 225);
+        padding: 10px 24px;
+        font-size: 16px;
+        font-weight: 600px;
+    }
+    .seconddiv h3 {
+        max-width: 280px;
+        color: rgb(39, 48, 61);
+        line-height: 36px;
+        font-size: 36px;
+    }
+    .seconddiv p {
+        margin: 25px 0;
+        color: rgb(102, 102, 102);
+        line-height: 27px;
+        width: 347px;
+    }
+    .lastdiv {
+        margin-top: 20px;
+        padding: 105px 61px;
+        border-radius: 30px 30px 0px 0px;
+        box-shadow: rgba(0, 0, 0, 0.04);
+    }
+    .lastdiv h3 {
+        color: rgb(39, 48, 61);
+        text-align: center;
+    }
+    #lastpara {
+        color: rgb(102, 102, 102);
+        max-width: 587px;
+        text-align: center;
+        border: 0.5px solid rgb(152, 152, 152);
+        border-radius: 8px;
+        padding: 6px;
+        margin: auto;
+        box-shadow: 2px 4px 6px 4px rgba(0, 0, 0, 0.04);
+    }
+    .nextdiv {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 75px;
+        margin-bottom: 96px;
+    }
+    .nextdiv img {
+        width: 60px;
+        margin-bottom: 24px;
+        height: 54px;
+    }
+    .nextdiv h4 {
+        margin-bottom: 7px;
+        color: rgb(39, 48, 61);
+        font-size: 18px;
+    }
+    .nextdiv p {
+        color: rgb(152, 152, 152);
+        max-width: 286px;
+        line-height: 28.8px;
+        font-weight: 300px;
+    }
+    .beforefooter {
+        padding: 0 65px;
+        display: flex;
+        background-color: rgb(243, 244, 246);
+        border-radius: 30px 30px 0 0;
+    }
+    .beforefooter h4 {
+        font-size: 40px;
+        color: rgb(39, 48, 61);
+    }
+</style>
+<body>
+    <header>
+        <div class="leftnav">
+            <h2><a href="#aboki">Aboki</a></h2>
+        </div>
+        <div class="middlenav">
+            <a href="#helpcenter">Help Center</a>
+            <a href="#legal">Legal</a>
+            <a href="#blog">Blog</a>
+        </div>
+        <div class="rightnav">
+            <a href="#login">Login</a>
+            <button>Sign up</button>
+        </div>
+    </header>
+    <section>
+        <h1>Foreign bank accounts for Africans</h1>
+        <p>Open a virtual global bank account for free 
+        to receive and make foreign payments or convert currencies, 
+        all in one place.</p>
+        <div style="display: flex";>
+            <button>Get Started</button>
+            <button>Learn More</button>
+        </div>
+        <img src="firstaboki.png" alt="abokiafrica" id="firstimg">
+        <h2>What can you do with Aboki?</h2>
+        <p id="secondpara">For everything cross-border transactions; 
+            getting paid, making and receiving payments, 
+            currency exchange and much more, Aboki is all 
+            you’ll ever need. Say bye to the days foreign 
+            transactions were a hassle.</p>
+        <div class="seconddiv">
+            <img src="secondaboki.png" alt="abokiafrica2">
+            <div>
+                <h3>Get foreign bank accounts</h3>
+                <p>Open a virtual foreign bank account 
+                    from your phone or computer, for free.</p>
+                <p>Once your account is setup, you can send 
+                    and receive money instantly without stress.</p>
+                <p>We currently support EUR, GBP & USD.</p>
+                <button>Learn More</button>
+            </div>
+        </div>
+        <div class="seconddiv">
+            <div>
+                <h3>Switch between currencies fast</h3>
+                <p>Enjoy quick and efficient online foreign 
+                    exchange transactions.</p>
+                <p>Say goodbye to bank queues and disappointments.</p>
+                <button>Learn More</button>
+            </div>
+            <div>
+                <img src="convertfunds.png" alt="convertfunds">
+            </div>
+        </div>
+        <div class="seconddiv">
+            <div>
+                <img src="thirdaboki.png" alt="abokiafrica3">
+            </div>
+            <div>
+                <h3>Send and receive money quickly</h3>
+                <p>Open a virtual foreign bank account 
+                    from your phone or computer, for free.</p>
+                <p>Once your account is setup, you can send and 
+                    receive money instantly without stress.</p>
+                <button>Learn More</button>
+            </div>
+        </div>
+        <div class="lastdiv">
+            <h3>We’ve got you absolutely covered!</h3>
+            <div class="nextdiv">
+                <div style="width: 286px; margin-top: 16px;">
+                    <img src="superfast.png" alt="superfast">
+                    <h4>Super-fast payment</h4>
+                    <p>Payments are fast and we charge as little 
+                        as possible, and always show you upfront.</p>
+                </div>
+                <div style="width: 286px; margin-top: 16px;">
+                    <img src="bestfx.png" alt="bestfx">
+                    <h4>Best FX Rates</h4>
+                    <p>We offer outstanding currency exchange 
+                        rates that are market-determined and 
+                        updated through the day so you can see them.</p>
+                </div>
+                <div style="width: 286px; margin-top: 16px;">
+                    <img src="securetransaction.png"alt="securetransaction">
+                    <h4>Secure Transactions</h4>
+                    <p>Your money in Aboki is safe and our secure 24/7 monitoring 
+                        systems and servers ensure all your data is safe.</p>
+                </div>
+            </div>
+            <h3 style="margin-bottom: 18px;">Don’t just take our word for it</h3>
+            <div  id="lastpara">
+                <p>@abokiafrica came through in less than 15 Minutes.
+                    I know that some days there are challenges receiving
+                    payments from aboki. But on days like this, i am very
+                    much impressed. Great service! Ndubuisi.
+                </p>
+            </div>
+            <div class="beforefooter">
+                <div style="padding: 64px 0;">
+                    <h4>Digital banking at your fingertips</h4>
+                    <p>Our mobile app is coming soon to the App Store and Google Playstore</p>
+                <div>
+                    <img src="applestore.png" alt="applestore" width="150px">
+                    <img src="googlestore.png" alt="googlestore" width="150px">
+                </div>
+                </div>
+                <div>
+                    <img src="phonemockup.png" alt="phonemockup" width="400px">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <h2>Aboki</h2>
+            <p>Copyright@2021. Aboki Africa Ltd.</p>
+            <p>All Right Reserved</p>
+        </div>
+        <div>
+        <p>Company</p>
+            <a href="#ourblog">Our Blog</a>
+            <a href="#contactus">Contact Us</a>
+        </div>
+        <div>
+        <p>Legal</p>
+            <a href="#privacy">Privacy Policy</a>
+            <a href="#terms">Terms of Service</a>
+        </div>
+        <div>
+            <p>Help</p>
+            <a href="#privacy">Read our FAQs</a>
+        </div>
+        <span>&#8736</span>
+    </footer>
+</body>
+</html>
